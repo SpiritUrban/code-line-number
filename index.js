@@ -1,10 +1,7 @@
-const l = console.log;
-
 /**
 * the IE crutch - IE requires the Error to actually be throw  else is undefined.
 */
 const ieCrutch = (err) => { try { throw err } catch (err) { return err } };
-
 
 module.exports = (...commands) => {
     var err = new Error(); // err = a lot of text strings (stack)
