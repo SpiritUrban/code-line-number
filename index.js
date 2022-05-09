@@ -16,7 +16,7 @@ module.exports = (...commands) => {
     const parsed = re.exec(firstLne);
     const desired = parsed[1];
     commands.forEach(command=>{
-        if (command=='report') l('bunch:', { firstLne, parsed, desired })
-    })
+        if (command=='report') l('bunch:', { firstLne, parsed, desired });
+    });
     return desired;
-}
+};
