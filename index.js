@@ -7,14 +7,10 @@ module.exports = () => {
     //
     // the IE crutch - IE requires the Error to actually be throw  else is undefined.
     //
-    const ieCrutch = () => {
-        try {
-            throw err;
-        } catch (err) {
-            if (!err.stack) return 0; // probably IE <10
-        }
-    }
+    const ieCrutch = () => { try { throw err } catch (err) { } };
+
     if (!err.stack) ieCrutch();
+    if (!err.stack) return 0; // probably IE <10
 
     var stack = err.stack.toString().split(/\r\n|\n/); // convert text to array of text lines
 
@@ -30,7 +26,7 @@ module.exports = () => {
     const parsed = frameRE.exec(result);
     const desired = parsed[1]
 
-    l('x-',)
+    l('x-', { parsed, desired })
 
     return desired;
 }
