@@ -1,0 +1,26 @@
+{
+  "name": "code-line-number",
+  "version": "1.0.0",
+  "description": "Determines the current line number in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpiritUrban/code-line-number.git"
+  },
+  "keywords": [
+    "console",
+    "log",
+    "number",
+    "line",
+    "code"
+  ],
+  "author": "Vitaliy Diachuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SpiritUrban/code-line-number/issues"
+  },
+  "homepage": "https://github.com/SpiritUrban/code-line-number#readme"
+}
