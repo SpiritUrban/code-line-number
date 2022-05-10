@@ -1,3 +1,5 @@
+const l = console.log;
+
 /**
 * the IE crutch - IE requires the Error to actually be throw  else is undefined.
 */
