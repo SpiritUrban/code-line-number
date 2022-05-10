@@ -1,6 +1,6 @@
 {
   "name": "code-line-number",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Determines the current line number in JavaScript",
   "main": "index.js",
   "scripts": {
